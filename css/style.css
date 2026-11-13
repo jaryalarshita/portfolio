@@ -1,5 +1,7 @@
 /* =========================================================
-   Colors & settings — change --accent to restyle the site
+   Colors & settings — to restyle the site, change --accent and
+   --accent-soft (same color, low opacity) in BOTH themes below.
+   In dark mode use a brighter version so small text stays readable.
    ========================================================= */
 :root {
   --bg: #fafaf9;
@@ -7,8 +9,8 @@
   --text: #1a1917;
   --muted: #6b6863;
   --line: #e7e5e1;
-  --accent: #4f46e5;
-  --accent-soft: rgba(79, 70, 229, 0.10);
+  --accent: #d5006d;
+  --accent-soft: rgba(213, 0, 109, 0.09);
   --on-accent: #ffffff;
 
   --font: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -25,8 +27,8 @@
   --text: #ececef;
   --muted: #9b9ba5;
   --line: #25252b;
-  --accent: #8f8cff;
-  --accent-soft: rgba(143, 140, 255, 0.13);
+  --accent: #ff4fa3;
+  --accent-soft: rgba(255, 79, 163, 0.13);
   --on-accent: #0b0b0d;
   color-scheme: dark;
 }
