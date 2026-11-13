@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arshita Jaryal — Developer</title>
+  <meta name="description" content="Arshita Jaryal — Computer Science student at NIT Hamirpur building fast, well-tested web tools and contributing to open source." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Set the theme before the page paints, so there's no flash -->
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Back to top">AJ<span>.</span></a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#open-source">Open Source</a>
+        <a href="#experience">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn nav__menu" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container">
+        <p class="hero__status reveal"><span class="dot"></span> CSE @ NIT Hamirpur · open to internships</p>
+
+        <h1 class="hero__title" data-split>Arshita Jaryal</h1>
+
+        <p class="hero__lead reveal" style="--d: .5s">
+          I build fast, well-tested tools for the web and contribute to open source.
+        </p>
+
+        <div class="hero__cta reveal" style="--d: .65s">
+          <a href="#projects" class="btn btn--primary">See my work <span class="arrow">→</span></a>
+          <a href="assets/resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">01 — About</span>
+          <h2>A bit about me</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__bio reveal">
+            <p>
+              I'm a Computer Science undergrad at NIT Hamirpur (class of 2028). I like building
+              tools that are fast, well-tested, and easy to use, from a browser-only synthetic data engine
+              to the frontend of a drug-discovery research prototype.
+            </p>
+            <p>
+              Outside class I contribute to open source, with merged PRs at <em>Vercel Labs</em> and
+              <em>Compass Calendar</em>. I also solve problems on LeetCode and build at hackathons. Most recently,
+              my team won Best All-Girls Team at HackSecure 2026.
+            </p>
+            <a href="assets/resume.pdf" class="link-arrow" target="_blank" rel="noopener">View my resume <span>↗</span></a>
+          </div>
+
+          <div class="skills">
+            <div class="skills__group reveal" style="--d: .05s">
+              <h3>Languages</h3>
+              <ul class="chips">
+                <li>TypeScript</li><li>JavaScript</li><li>C++</li><li>Python</li>
+              </ul>
+            </div>
+            <div class="skills__group reveal" style="--d: .15s">
+              <h3>Web &amp; AI</h3>
+              <ul class="chips">
+                <li>React</li><li>Vite</li><li>Zustand</li><li>AG Grid</li><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>JWT</li><li>Gemini API</li><li>PayPal APIs</li><li>HTML/CSS</li>
+              </ul>
+            </div>
+            <div class="skills__group reveal" style="--d: .25s">
+              <h3>Databases &amp; Tools</h3>
+              <ul class="chips">
+                <li>SQLite</li><li>MongoDB</li><li>Prisma</li><li>Git</li><li>GitHub Actions</li><li>Vercel</li><li>Render</li><li>Vitest</li><li>Postman</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Numbers count up when they scroll into view -->
+        <ul class="stats">
+          <li class="reveal">
+            <strong><span data-count="350">350</span>+</strong>
+            <a href="https://leetcode.com/u/jaryalarshita/" target="_blank" rel="noopener">LeetCode problems ↗</a>
+          </li>
+          <li class="reveal" style="--d: .1s">
+            <strong data-count="4">4</strong>
+            <span>merged open-source PRs</span>
+          </li>
+          <li class="reveal" style="--d: .2s">
+            <strong data-count="8.41" data-decimals="2">8.41</strong>
+            <span>CGPA / 10</span>
+          </li>
+          <li class="reveal" style="--d: .3s">
+            <strong data-count="239">239</strong>
+            <span>tests in Synq's CI</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">02 — Projects</span>
+          <h2>Things I've built</h2>
+        </header>
+
+        <!-- To add a project, copy a whole <article class="card"> ... </article> block. -->
+        <div class="projects">
+          <article class="card card--featured reveal">
+            <div class="card__top">
+              <span class="card__num">01 · Featured</span>
+              <div class="card__links">
+                <a href="https://github.com/jaryalarshita/synq" target="_blank" rel="noopener">Code ↗</a>
+                <a href="https://synq-studio.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+              </div>
+            </div>
+            <div class="card__body">
+              <div>
+                <h3>Synq</h3>
+                <p class="card__sub">Serverless synthetic data engine &amp; API mocker</p>
+                <p>
+                  Generates relational data from your own schemas. A topological sort of foreign-key
+                  dependencies keeps referential integrity (and names any cycles). It also includes a browser-only
+                  mock REST API with a chaos layer that injects latency and 500/429/404 errors, plus a live
+                  observability dashboard drawn in hand-written SVG.
+                </p>
+                <ul class="tags"><li>TypeScript</li><li>React</li><li>Zustand</li><li>Vitest</li><li>GitHub Actions</li><li>Vercel</li></ul>
+              </div>
+              <ul class="card__metrics">
+                <li><strong>601 → ~200 kB</strong><span>initial bundle, via lazy loading</span></li>
+                <li><strong>239</strong><span>deterministic tests in CI</span></li>
+                <li><strong>TS · SQL · CSV · JSON</strong><span>exported from one schema graph</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card card--featured reveal">
+            <div class="card__top">
+              <span class="card__num">02 · PayPal Hackathon 2026</span>
+              <div class="card__links">
+                <a href="https://github.com/jaryalarshita/tend" target="_blank" rel="noopener">Code ↗</a>
+                <a href="https://tend-145u.onrender.com" target="_blank" rel="noopener">Live ↗</a>
+              </div>
+            </div>
+            <div class="card__body">
+              <div>
+                <h3>Tend</h3>
+                <p class="card__sub">AI back office for small PayPal sellers. You approve, Tend acts.</p>
+                <p>
+                  Tend pulls overdue invoices, refund requests, disputes and low stock from PayPal into one
+                  AG Grid approval queue. Gemini proposes an action for each item, and the owner approves, edits,
+                  or types plain-English commands that turn into Grid API calls with undo. Only approved rows run,
+                  and the server re-prices every plan from fresh PayPal data first.
+                </p>
+                <ul class="tags"><li>React</li><li>Node.js</li><li>Express.js</li><li>Gemini API</li><li>PayPal APIs</li><li>AG Grid</li></ul>
+              </div>
+              <ul class="card__metrics">
+                <li><strong>4 PayPal APIs</strong><span>invoicing, payments, disputes, checkout</span></li>
+                <li><strong>No double refunds</strong><span>idempotent request IDs per row</span></li>
+                <li><strong>3-model fallback</strong><span>reuses cached reviews when Gemini is busy</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d: .1s">
+            <div class="card__top">
+              <span class="card__num">03 · Team of 3</span>
+              <div class="card__links">
+                <a href="https://github.com/ayush00git/ProtPocket" target="_blank" rel="noopener">Code ↗</a>
+              </div>
+            </div>
+            <h3>ProtPocket</h3>
+            <p class="card__sub">Computational drug-discovery research prototype</p>
+            <p>
+              A deployed tool that ranks drug-binding pockets using a Gap Score heuristic. I led the frontend
+              migration to TypeScript, built the binding-pockets panel, and fixed AutoDock Vina docking failures
+              by sanitizing PDBQT files in the Go service.
+            </p>
+            <ul class="tags"><li>TypeScript</li><li>React</li><li>Go</li><li>AlphaFold</li><li>AutoDock Vina</li><li>Mol*</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d: .2s">
+            <div class="card__top">
+              <span class="card__num">04</span>
+              <div class="card__links">
+                <a href="https://github.com/jaryalarshita/codelist" target="_blank" rel="noopener">Code ↗</a>
+              </div>
+            </div>
+            <h3>CodeList</h3>
+            <p class="card__sub">DSA revision tracker</p>
+            <p>
+              A full-stack tracker with JWT auth, bcrypt hashing and per-user progress. It autofills problems
+              through LeetCode's GraphQL API and includes the 474-problem Striver A2Z library with
+              topic-wise tracking and a reflection diary.
+            </p>
+            <ul class="tags"><li>React</li><li>Vite</li><li>Express.js</li><li>SQLite</li><li>Prisma</li><li>JWT</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPEN SOURCE ============ -->
+    <section class="section" id="open-source">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">03 — Open Source</span>
+          <h2>Merged contributions</h2>
+        </header>
+
+        <ul class="oss">
+          <li class="oss__row reveal">
+            <div class="oss__repo">
+              <h3>Vercel Labs</h3>
+              <span>skills · agent-skills</span>
+            </div>
+            <ul class="oss__items">
+              <li>
+                <p>Added skill-origin reporting to the <code>skills list</code> CLI (GitHub-installed vs. local skills).</p>
+                <a href="https://github.com/vercel-labs/skills/pull/1450" target="_blank" rel="noopener">PR #1450 ↗</a>
+              </li>
+              <li>
+                <p>Rewrote a React performance rule as “Avoid Layout Thrashing” with read-then-write batching.</p>
+                <a href="https://github.com/vercel-labs/agent-skills/pull/52" target="_blank" rel="noopener">PR #52 ↗</a>
+              </li>
+            </ul>
+          </li>
+          <li class="oss__row reveal" style="--d: .1s">
+            <div class="oss__repo">
+              <h3>Compass Calendar</h3>
+              <span>React · TypeScript</span>
+            </div>
+            <ul class="oss__items">
+              <li>
+                <p>Unified the datepicker navigation icons.</p>
+                <a href="https://github.com/KeepSoftwareSimple/compass-calendar/pull/1592" target="_blank" rel="noopener">PR #1592 ↗</a>
+              </li>
+              <li>
+                <p>Fixed the anonymous-user icon's semantic color.</p>
+                <a href="https://github.com/KeepSoftwareSimple/compass-calendar/pull/1799" target="_blank" rel="noopener">PR #1799 ↗</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE, EDUCATION, AWARDS ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">04 — Journey</span>
+          <h2>Experience &amp; education</h2>
+        </header>
+
+        <div class="journey">
+          <div class="journey__col">
+            <h3 class="journey__title reveal">Experience</h3>
+            <ol class="timeline">
+              <li class="reveal">
+                <span class="timeline__date">Mar 2025 — Aug 2025</span>
+                <h4>Web Developer <span>· App Team, NIT Hamirpur</span></h4>
+                <p>Co-developed the club's website with one other member, owning most of the React frontend.</p>
+              </li>
+              <li class="reveal" style="--d: .1s">
+                <span class="timeline__date">Jan 2025 — Mar 2025</span>
+                <h4>Technical Member <span>· .exe, NIT Hamirpur</span></h4>
+                <p>Supported technical setup and live troubleshooting for Pre-Nimbus (200+ attendees).</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="journey__col">
+            <h3 class="journey__title reveal">Education</h3>
+            <ol class="timeline">
+              <li class="reveal">
+                <span class="timeline__date">Aug 2024 — Jul 2028</span>
+                <h4>B.Tech, Computer Science &amp; Engineering <span>· NIT Hamirpur</span></h4>
+                <p>CGPA 8.41 / 10</p>
+              </li>
+            </ol>
+
+            <h3 class="journey__title journey__title--spaced reveal">Awards</h3>
+            <ol class="timeline">
+              <li class="reveal">
+                <span class="timeline__date">2026</span>
+                <h4>HackSecure — Winner <span>· Best All-Girls Team</span></h4>
+                <p>Built an Android network analyzer in 48 hours.</p>
+              </li>
+              <li class="reveal" style="--d: .1s">
+                <span class="timeline__date">2026</span>
+                <h4>Flipkart GRiD <span>· National Semi-Finalist</span></h4>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <span class="section__label reveal">05 — Contact</span>
+        <h2 class="contact__title reveal">Let's build something<br />together.</h2>
+        <p class="contact__lead reveal">
+          Have an internship, a project idea, or just want to say hi? My inbox is open.
+        </p>
+
+        <div class="contact__actions reveal">
+          <a href="mailto:jaryalarshita06@gmail.com" class="btn btn--primary btn--lg">Say hello <span class="arrow">→</span></a>
+          <button class="btn btn--ghost btn--lg" id="copy-email" data-email="jaryalarshita06@gmail.com">
+            <span class="copy-label">Copy email</span>
+          </button>
+        </div>
+
+        <ul class="socials reveal">
+          <li><a href="https://github.com/jaryalarshita" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/arshita-jaryal/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://leetcode.com/u/jaryalarshita/" target="_blank" rel="noopener">LeetCode</a></li>
+          <li><a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Arshita Jaryal</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
